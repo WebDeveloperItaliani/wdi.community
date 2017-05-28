@@ -1,0 +1,52 @@
+.stripe-container {
+    .absolute(0);
+
+    .stripe-item {
+        position: absolute;
+        .size(80rem, 14rem);
+    }
+
+    .stripe-item.-green, .stripe-item.-teal {
+        top: -7rem;
+    }
+    .stripe-item.-green {
+        left: -40rem;
+    }
+    .stripe-item.-teal {
+        left: -60rem;
+    }
+    .stripe-item.-red, .stripe-item.-rainbow {
+        bottom: -7rem;
+    }
+    .stripe-item.-red {
+        right: -60rem;
+    }
+    .stripe-item.-rainbow {
+        right: -40rem;
+    }
+
+    .stripe-item.-teal, .stripe-item.-red {
+        .size(120rem, 14rem);
+    }
+
+    .stripe-item.-green {
+        background-color: @green;
+        transform: translate(12rem, 12rem) rotate(-60deg);
+        animation: green-stripe-animation 4.8s @material-standard-curve .8s forwards;
+    }
+    .stripe-item.-teal {
+        background-color: @teal;
+        transform: translate(-4rem, 80rem) rotate(-60deg);
+        animation: teal-stripe-animation 5s @material-standard-curve 1.2s forwards;
+    }
+    .stripe-item.-red {
+        background-color: @red;
+        transform: translate(4rem, -80rem) rotate(-60deg);
+        animation: red-stripe-animation 5.4s @material-standard-curve 1.4s forwards;
+    }
+    .stripe-item.-rainbow {
+        background: @rainbow-gradient;
+        transform: translate(-12rem, -12rem) rotate(-60deg);
+        animation: rainbow-stripe-animation 5.2s @material-standard-curve 1s forwards;
+    }
+}

@@ -1,0 +1,31 @@
+.size(@size) {
+	width: @size;
+	height: @size;
+}
+.size(@width, @height) {
+	width: @width;
+	height: @height;
+}
+
+.fluidsize(@property, @min-size: 18px, @max-size: 36px, @min-screen-size: 320px, @max-screen-size: 1920px) when (isunit(@min-size, px)) {
+	@{property}: e(%(
+		"calc(%s + (%s - %s) * (100vw - %s) / (%s - %s))",
+		@min-size,
+		unit(@max-size),
+		unit(@min-size),
+		@min-screen-size,
+		unit(@max-screen-size),
+		unit(@min-screen-size)
+	));
+}
+.fluidsize(@property, @min-size: 1.8rem, @max-size: 3.6rem, @min-screen-size: 32rem, @max-screen-size: 192rem) when (isunit(@min-size, rem)) {
+	@{property}: e(%(
+		"calc(%s + (%s - %s) * (100vw - %s) / (%s - %s))",
+		@min-size,
+		unit(@max-size),
+		unit(@min-size),
+		@min-screen-size,
+		unit(@max-screen-size),
+		unit(@min-screen-size)
+	));
+}

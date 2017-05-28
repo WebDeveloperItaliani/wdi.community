@@ -1,0 +1,29 @@
+.child-transition-delay-generator(@child-count: 4, @step: .5s, @starting-delay: 0s, @counter: 1) when (@counter <= @child-count) {
+	&:nth-child(@{counter}) {
+		transition-delay: (@counter - 1) * @step + @starting-delay;
+	}
+
+	.child-transition-delay-generator(@child-count, @step, @starting-delay, @counter + 1);
+}
+.nthtype-transition-delay-generator(@child-count: 4, @step: .5s, @starting-delay: 0s, @counter: 1) when (@counter <= @child-count) {
+	&:nth-of-type(@{counter}) {
+		transition-delay: (@counter - 1) * @step + @starting-delay;
+	}
+
+	.nthtype-transition-delay-generator(@child-count, @step, @starting-delay, @counter + 1);
+}
+
+.child-animation-delay-generator(@child-count: 4, @step: .5s, @starting-delay: 0s, @counter: 1) when (@counter <= @child-count) {
+	&:nth-child(@{counter}) {
+		animation-delay: (@counter - 1) * @step + @starting-delay;
+	}
+
+	.child-animation-delay-generator(@child-count, @step, @starting-delay, @counter + 1);
+}
+.nthtype-animation-delay-generator(@child-count: 4, @step: .5s, @starting-delay: 0s, @counter: 1) when (@counter <= @child-count) {
+	&:nth-of-type(@{counter}) {
+		animation-delay: (@counter - 1) * @step + @starting-delay;
+	}
+
+	.nthtype-animation-delay-generator(@child-count, @step, @starting-delay, @counter + 1);
+}

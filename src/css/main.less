@@ -1,0 +1,61 @@
+@import (less) 'node_modules/normalize-css/normalize.css';
+@import 'node_modules/font-awesome/less/font-awesome.less';
+
+//@import 'utils/grids';
+@import 'utils/animations';
+//@import 'utils/helpers';
+@import 'utils/positions';
+@import 'utils/sizes';
+@import 'utils/media-queries';
+@import 'utils/generators';
+// @import 'utils/shadows';
+@import 'utils/device-label';
+
+@import 'layouts/global';
+@import 'layouts/main-container';
+@import 'components/pace-loading';
+@import 'components/presentation-container';
+@import 'components/social-links';
+@import 'components/topic-list';
+@import 'atoms/logo';
+@import 'atoms/stripes';
+
+// Colors
+@green: #9ccc65;
+@teal: #26a69a;
+@red: #ef5350;
+@mid-grey: #bdbdbd;
+@light-grey: #e0e0e0;
+
+// Gradients
+@rainbow-gradient: linear-gradient(-60deg, #b11d8f 0%, #431e7c 20%, #42b8cc 45%, #42a242 65%, #f7d813 80%, #ff4f11 100%);
+
+// General
+
+// Material easings
+@material-standard-curve: cubic-bezier(.4, 0, .2, 1);
+@material-deceleration-curve: cubic-bezier(0, 0, .2, 1);
+@material-acceleration-curve: cubic-bezier(.4, 0, 1, 1);
+@material-sharp-curve: cubic-bezier(.4, 0, .6, 1);
+
+// Shadows
+@shadow-key-umbra-opacity: .18;
+@shadow-key-penumbra-opacity: .14;
+@shadow-ambient-shadow-opacity: .12;
+
+// Z-indexes
+
+// Screen breakpoints
+@xxl-desktop-min-width: 1920px;
+@xl-desktop-max-width: 1919px;
+@xl-desktop-min-width: 1440px;
+@md-desktop-max-width: 1439px;
+@md-desktop-min-width: 1280px;
+@sm-desktop-max-width: 1279px;
+@sm-desktop-min-width: 1024px;
+@tablet-max-width: 1023px;
+@tablet-min-width: 601px;
+@mobile-max-width: 600px;
+@mobile-min-width: 421px;
+@sm-mobile-max-width: 420px;
+@sm-mobile-min-width: 320px;
