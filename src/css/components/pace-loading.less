@@ -1,0 +1,67 @@
+.main-container, .main-nav {
+    filter: grayscale(100%) saturate(40%);
+    transition: filter .6s @material-standard-curve .3s;
+    will-change: filter;
+}
+body {
+    opacity: 0;
+    transition: opacity 1s @material-standard-curve;
+}
+body.pace-running {
+    height: 100%;
+    overflow: hidden;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+}
+// Ma dimme te che cazzo tocca fa ancora pe sto cazzo de explorer
+_:-ms-lang(x), body.pace-running {
+    transform: none;
+    transform-style: flat;
+}
+
+body.pace-running, body.pace-done {
+    opacity: 1;
+}
+body.pace-done .main-container, body.pace-done .main-nav {
+    filter: none;
+}
+
+.pace {
+    pointer-events: none;
+    user-select: none;
+}
+.pace-inactive {
+    display: none;
+}
+.pace .pace-progress {
+    background: @red;
+    .fixed(0, 100%, auto, auto);
+    .size(100%, 2px);
+    z-index: 2000;
+}
+.pace .pace-progress-inner {
+    display: block;
+    position: absolute;
+    right: 0;
+    .size(100px, 100%);
+    box-shadow: 0 0 10px @red, 0 0 5px @red;
+    opacity: 1;
+    transform: rotate(3deg) translate(0px, -4px);
+}
+.pace .pace-activity {
+    display: none;
+    // .fixed(15px, 15px, auto, auto);
+    // .size(14px);
+    // border: solid 2px transparent;
+    // border-top-color: @orange;
+    // border-left-color: @orange;
+    // border-radius: 10px;
+    // animation: spin 0.4s linear infinite;
+    // z-index: 2000;
+}
+
+#media-screen > .mobile-and-smaller({
+    .pace {
+        display: none;
+    }
+});

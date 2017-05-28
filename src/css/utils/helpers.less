@@ -1,0 +1,13 @@
+._wrap {
+	width: @wrap-width;
+	margin: 0 auto;
+
+	#media-screen > .tablet-and-smaller({
+		width: 100%;
+		padding: 0 @tablet-global-hpadding;
+	});
+
+	#media-screen > .mobile-and-smaller({
+		padding: 0 @mobile-global-hpadding;
+	});
+}
