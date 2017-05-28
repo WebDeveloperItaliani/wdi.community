@@ -1,0 +1,25 @@
+.row {
+	display: flex;
+}
+
+@media screen and (min-width: @desktop-min-width) {
+	.row {
+		flex-direction: row;
+	}
+
+	.col.-half {
+		width: 50%;
+	}
+	.col.-wide {
+		width: 70%;
+	}
+	.col.-narrow {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: @tablet-max-width) {
+	.row {
+		flex-direction: column;
+	}
+}

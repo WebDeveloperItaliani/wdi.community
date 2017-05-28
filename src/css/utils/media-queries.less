@@ -1,0 +1,131 @@
+#media-screen {
+	.sm-mobile-only(@rules) {
+		@media screen and (max-width: @sm-mobile-max-width) {
+			@rules();
+		}
+	}
+
+	.mobile-only(@rules) {
+		@media screen and (min-width: @mobile-min-width) and (max-width: @mobile-max-width) {
+			@rules();
+		}
+	}
+	.mobile-and-smaller(@rules) {
+		@media screen and (max-width: @mobile-max-width) {
+			@rules();
+		}
+	}
+	.mobile-and-greater(@rules) {
+		@media screen and (min-width: @mobile-min-width) {
+			@rules();
+		}
+	}
+
+	.tablet-only(@rules) {
+		@media screen and (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+			@rules();
+		}
+	}
+	.tablet-and-smaller(@rules) {
+		@media screen and (max-width: @tablet-max-width) {
+			@rules();
+		}
+	}
+	.tablet-and-greater(@rules) {
+		@media screen and (min-width: @tablet-min-width) {
+			@rules();
+		}
+	}
+
+	.desktop-only(@rules) {
+		@media screen and (min-width: @sm-desktop-min-width) {
+			@rules();
+		}
+	}
+	.sm-desktop-only(@rules) {
+		@media screen and (min-width: @sm-desktop-min-width) and (max-width: @sm-desktop-max-width) {
+			@rules();
+		}
+	}
+	.sm-desktop-and-smaller(@rules) {
+		@media screen and (max-width: @sm-desktop-max-width) {
+			@rules();
+		}
+	}
+	.sm-desktop-and-greater(@rules) {
+		.desktop-only(@rules);
+	}
+
+	.md-desktop-only(@rules) {
+		@media screen and (min-width: @md-desktop-min-width) and (max-width: @md-desktop-max-width) {
+			@rules();
+		}
+	}
+	.md-desktop-and-smaller(@rules) {
+		@media screen and (max-width: @md-desktop-max-width) {
+			@rules();
+		}
+	}
+	.md-desktop-and-greater(@rules) {
+		@media screen and (min-width: @md-desktop-min-width) {
+			@rules();
+		}
+	}
+
+	.xl-desktop-only(@rules) {
+		@media screen and (min-width: @xl-desktop-min-width) and (max-width: @xl-desktop-max-width) {
+			@rules();
+		}
+	}
+	.xl-desktop-and-smaller(@rules) {
+		@media screen and (max-width: @xl-desktop-max-width) {
+			@rules();
+		}
+	}
+	.xl-desktop-and-greater(@rules) {
+		@media screen and (min-width: @xl-desktop-min-width) {
+			@rules();
+		}
+	}
+
+	.xxl-desktop-only(@rules) {
+		@media screen and (min-width: @xxl-desktop-min-width) {
+			@rules();
+		}
+	}
+
+	.device-portrait(@rules) {
+		@media screen and (orientation: portrait) {
+			@rules();
+		}
+	}
+	.device-landscape(@rules) {
+		@media screen and (orientation: landscape) {
+			@rules();
+		}
+	}
+
+	.tablet-portrait(@rules) {
+		@media screen and (min-width: @tablet-min-width) and (max-width: @tablet-max-width) and (orientation: portrait) {
+			@rules();
+		}
+	}
+	.tablet-landscape(@rules) {
+		@media screen and (min-width: @tablet-min-width) and (max-width: @tablet-max-width) and (orientation: landscape) {
+			@rules();
+		}
+	}
+
+	.mobile-portrait(@rules) {
+		@media screen and (max-width: @mobile-max-width) and (orientation: portrait) {
+			@rules();
+		}
+	}
+	.mobile-landscape(@rules) {
+		@media screen and (max-width: @mobile-max-width) and (orientation: landscape) {
+			@rules();
+		}
+	}
+
+
+}

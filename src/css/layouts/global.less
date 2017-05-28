@@ -1,0 +1,49 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: #FFF;
+	height: 100%;
+	font-family: 'Open Sans';
+	font-size: 10px;
+	font-weight: 300;
+	overflow: hidden;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-size: 1.6rem;
+	color: @mid-grey;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover, &:active, &:visited {
+		color: inherit;
+		text-decoration: underline;
+	}
+}
+
+i {
+	font-style: normal;
+}
+
+input, textarea, button, fieldset {
+	-webkit-appearance: none;
+	background: transparent;
+	padding: 0;
+	border: 0 none;
+}
+
+input::-ms-clear, input::-ms-reveal {
+	display: none;
+}
