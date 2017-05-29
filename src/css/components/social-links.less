@@ -36,4 +36,32 @@
     .fa-github::before {
         font-size: 2.8rem;
     }
+
+    #media-screen > .tablet-only({
+        height: 28vh;
+    });
+    #media-screen > .mobile-and-smaller({
+        height: 10rem;
+        min-height: 10rem;
+
+        .social-cta {
+            margin-bottom: .4rem;
+            font-size: 1.4rem;
+        }
+    });
+    #media-screen > .sm-mobile-only({
+        height: 8.4rem;
+        min-height: 8.4rem;
+
+        .link-list {
+            width: 12rem;
+        }
+
+        .fa::before {
+            font-size: 1.8rem;
+        }
+        .fa-github::before {
+            font-size: 2.1rem;
+        }
+    });
 }
