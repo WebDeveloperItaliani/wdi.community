@@ -1,0 +1,28 @@
+sudo: required
+
+language: node_js
+node_js:
+  - "node"
+
+services:
+  - docker
+
+branches:
+  only:
+  - master
+
+install:
+- npm install -g grunt-cli
+- npm install
+
+script:
+- grunt build:prod
+
+deploy:
+  local_dir: dist/
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  fqdn: wdi.community
+  on:
+    branch: master
