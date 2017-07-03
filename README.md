@@ -1,0 +1,1 @@
+# Source code of wdi.community web site

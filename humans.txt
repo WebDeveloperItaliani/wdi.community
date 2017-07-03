@@ -1,0 +1,67 @@
+/* TEAM */
+
+Admin: Federico Biccheddu.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+
+Admin: Francesco Malatesta.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+
+Admin: Matteo Manchi.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+
+Admin: Vincenzo Provenza.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+
+Admin: Alessio Michelini.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+
+Admin: Claudio Ludovico Panetta.                
+Site: claudioludovico.panetta.it.                  
+Twitter: @ludo237.                   
+Location: Italy.
+
+Admin: Emanuele Minotto.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+
+Admin: Julian Xhokaxhiu.                
+Site:.                  
+Twitter:.                   
+Location: Germany.
+
+Admin: Leonardo Allegrini.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+
+Admin: Marco Pragliola.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+
+Admin: Simone Lazzari.                
+Site:.                  
+Twitter:.                   
+Location: Italy.
+	
+/* THANKS */
+
+Name: The whole WDI community
+                            
+/* SITE */
+
+Last update: 2017           
+Standards: HTML5, CSS3, ECMAScript 6
+Components: FontAwesome, Normalize CSS,polyfill        
+Software: Git, Visual Studio Code, Sublime Text 3
