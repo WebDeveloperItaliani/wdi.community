@@ -1,8 +1,8 @@
 /* TEAM */
 
 Admin: Federico Biccheddu.                
-Site:.                  
-Twitter:.                   
+Site: federicobiccheddu.it.
+Twitter: @Fredrik_Kedduh.
 Location: Italy.
 
 Admin: Francesco Malatesta.                
