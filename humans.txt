@@ -36,8 +36,8 @@ Twitter:.
 Location: Italy.
 
 Admin: Julian Xhokaxhiu.                
-Site:.                  
-Twitter:.                   
+Site: https://julianxhokaxhiu.com.
+Twitter: https://twitter.com/JulianXhokaxhiu.
 Location: Germany.
 
 Admin: Leonardo Allegrini.                
