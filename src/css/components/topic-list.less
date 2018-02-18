@@ -10,22 +10,58 @@
 
     .topic-item {
         cursor: default;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        display: inline-block;
+        position: relative;
         .size(15rem, 3.6rem);
-        padding: 0 1.8rem;
         border-radius: 1.8rem;
         margin: 0 1.8rem 1.2rem;
-        color: #fff;
-        text-align: left;
-        font-size: 1.6rem;
-        font-weight: 600;
+        overflow: hidden;
     }
     .topic-item.-support { background-color: @green; }
     .topic-item.-jobs { background-color: @teal; }
     .topic-item.-events { background-color: @red; }
-    .topic-item.-fun { background: @rainbow-gradient; }
+    .topic-item.-fun::before {
+        content: "";
+        display: block;
+        .absolute(-2rem);
+        background: @rainbow-gradient;
+        filter: blur(1rem);
+        z-index: 0;
+    }
+    .topic-item.-fun:hover::before {
+        animation-name: funtopic-hoverfx;
+        animation-duration: .6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .topic-item a {
+        display: flex;
+        .absolute(0);
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 1.8rem;
+        color: #fff;
+        text-align: left;
+        font-size: 1.6rem;
+        font-weight: 600;
+        z-index: 1;
+    }
+    .topic-item a::after {
+        content: "";
+        display: block;
+        .absolute(0);
+        background-color: #fff;
+        opacity: 0;
+        transition: opacity 125ms @material-standard-curve;
+        z-index: 2;
+    }
+    .topic-item a:hover::after {
+        opacity: .2;
+    }
+    .topic-item a:hover {
+        text-decoration: none;
+    }
 
     .material-icons {
         margin-right: 1.2rem;
@@ -44,6 +80,9 @@
             font-size: 1.4rem;
             padding: 0 1.6rem;
             margin: 0 0 .8rem;
+        }
+        .topic-item.-fun:hover::before {
+            animation-name: funtopic-hoverfx-mobile;
         }
         .material-icons {
             margin-right: 1rem;

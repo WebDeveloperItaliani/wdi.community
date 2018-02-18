@@ -6,6 +6,7 @@
         position: absolute;
         .size(80rem, 14rem);
         outline: 1px solid transparent;
+        overflow: hidden;
     }
 
     .stripe-item.-green, .stripe-item.-teal {
@@ -34,7 +35,14 @@
     .stripe-item.-green { background-color: @green; }
     .stripe-item.-teal { background-color: @teal; }
     .stripe-item.-red { background-color: @red; }
-    .stripe-item.-rainbow { background: @rainbow-gradient; }
+    .stripe-item.-rainbow::before {
+        content: "";
+        display: block;
+        .absolute(-2rem);
+        background: @rainbow-gradient;
+        filter: blur(1rem);
+        z-index: 0;
+    }
 
     #media-screen > .sm-desktop-and-greater({
         .stripe-item.-green {
