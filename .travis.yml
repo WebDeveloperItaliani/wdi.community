@@ -19,10 +19,10 @@ script:
 - grunt build:prod
 
 deploy:
-  local_dir: dist/
+  local-dir: dist/
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
   fqdn: wdi.community
   on:
     branch: master
