@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -59,3 +60,9 @@ typings/
 
 # Application dist folder
 dist
+=======
+node_modules
+bower_components
+*.DS_Store
+/dist
+>>>>>>> feature/coming-soon-landing

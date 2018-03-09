@@ -8,14 +8,17 @@ module.exports = function(grunt) {
         },
 
 
-        //         ******   ********  ********
-        //        **////** **//////  **//////
-        //       **    // /**       /**
-        //      /**       /*********/*********
-        //      /**       ////////**////////**
-        //      //**    **       /**       /**
-        //       //******  ********  ********
-        //        //////  ////////  ////////
+        //        ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄
+        //       ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+        //       ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀
+        //       ▐░▌          ▐░▌          ▐░▌
+        //       ▐░▌          ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄
+        //       ▐░▌          ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+        //       ▐░▌           ▀▀▀▀▀▀▀▀▀█░▌ ▀▀▀▀▀▀▀▀▀█░▌
+        //       ▐░▌                    ▐░▌          ▐░▌
+        //       ▐░█▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄█░▌ ▄▄▄▄▄▄▄▄▄█░▌
+        //       ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+        //        ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀
 
         less: {
             options: {
@@ -59,6 +62,18 @@ module.exports = function(grunt) {
             }
         },
 
+        //        ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄
+        //       ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+        //        ▀▀▀▀▀█░█▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀
+        //             ▐░▌    ▐░▌
+        //             ▐░▌    ▐░█▄▄▄▄▄▄▄▄▄
+        //             ▐░▌    ▐░░░░░░░░░░░▌
+        //             ▐░▌     ▀▀▀▀▀▀▀▀▀█░▌
+        //             ▐░▌              ▐░▌
+        //        ▄▄▄▄▄█░▌     ▄▄▄▄▄▄▄▄▄█░▌
+        //       ▐░░░░░░░▌    ▐░░░░░░░░░░░▌
+        //        ▀▀▀▀▀▀▀      ▀▀▀▀▀▀▀▀▀▀▀
+
         browserify: {
             dist: {
                 options: {
@@ -81,14 +96,17 @@ module.exports = function(grunt) {
         },
 
 
-        //       ****     **** **  ********   ******
-        //      /**/**   **/**/** **//////   **////**
-        //      /**//** ** /**/**/**        **    //
-        //      /** //***  /**/**/*********/**
-        //      /**  //*   /**/**////////**/**
-        //      /**   /    /**/**       /**//**    **
-        //      /**        /**/** ********  //******
-        //      //         // // ////////    //////
+        //        ▄▄       ▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄
+        //       ▐░░▌     ▐░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+        //       ▐░▌░▌   ▐░▐░▌ ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀
+        //       ▐░▌▐░▌ ▐░▌▐░▌     ▐░▌     ▐░▌          ▐░▌
+        //       ▐░▌ ▐░▐░▌ ▐░▌     ▐░▌     ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌
+        //       ▐░▌  ▐░▌  ▐░▌     ▐░▌     ▐░░░░░░░░░░░▌▐░▌
+        //       ▐░▌   ▀   ▐░▌     ▐░▌      ▀▀▀▀▀▀▀▀▀█░▌▐░▌
+        //       ▐░▌       ▐░▌     ▐░▌               ▐░▌▐░▌
+        //       ▐░▌       ▐░▌ ▄▄▄▄█░█▄▄▄▄  ▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄
+        //       ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+        //        ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀
 
         clean: ['<%= config.distDir %>/**'],
 
@@ -123,6 +141,32 @@ module.exports = function(grunt) {
             }
         },
 
+        dev_prod_switch: {
+            options: {
+                environment: (grunt.cli.tasks[0] === 'build:prod') ? 'prod' : 'dev',
+                env_char: '#',
+                env_block_dev: 'env:dev',
+                env_block_prod: 'env:prod'
+            },
+            dynamic_mappings: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.distDir %>/',
+                    src: ['*.html'],
+                    dest: '<%= config.distDir %>/'
+                }]
+            }
+        },
+
+        removeHtmlComments: {
+            target: {
+                expand: true,
+                cwd: '<%= config.distDir %>/',
+                src: ['*.html'],
+                dest: '<%= config.distDir %>/'
+            }
+        },
+
         watch: {
             grunt: {
                 files: 'Gruntfile.js',
@@ -131,7 +175,7 @@ module.exports = function(grunt) {
 
             media: {
                 files: ['<%= config.sourceDir %>/images/**', '<%= config.sourceDir %>/.htaccess', '<%= config.sourceDir %>/*.html', '<%= config.sourceDir %>/*.xml'],
-                tasks: 'copy'
+                tasks: ['copy', 'dev_prod_switch', 'removeHtmlComments']
             },
 
             css: {
@@ -151,7 +195,7 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.registerTask('_build', ['clean', 'copy', 'browserify']);
+    grunt.registerTask('_build', ['clean', 'copy', 'browserify', 'dev_prod_switch', 'removeHtmlComments']);
 
     grunt.registerTask('build:dev', ['_build', 'less:dev', 'autoprefixer']);
     grunt.registerTask('build:prod', ['_build', 'uglify', 'less:prod', 'autoprefixer']);
