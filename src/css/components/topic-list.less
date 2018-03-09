@@ -1,0 +1,56 @@
+.topic-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+
+    .topic-item {
+        cursor: default;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .size(15rem, 3.6rem);
+        padding: 0 1.8rem;
+        border-radius: 1.8rem;
+        margin: 0 1.8rem 1.2rem;
+        color: #fff;
+        text-align: left;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .topic-item.-support { background-color: @green; }
+    .topic-item.-jobs { background-color: @teal; }
+    .topic-item.-events { background-color: @red; }
+    .topic-item.-fun { background: @rainbow-gradient; }
+
+    .material-icons {
+        margin-right: 1.2rem;
+    }
+
+    #media-screen > .sm-desktop-and-smaller({
+        justify-content: center;
+        max-width: 38rem;
+    });
+    #media-screen > .mobile-and-smaller({
+        max-width: 18rem;
+    });
+    #media-screen > .sm-mobile-only({
+        .topic-item {
+            .size(13rem, 3.2rem);
+            font-size: 1.4rem;
+            padding: 0 1.6rem;
+            margin: 0 0 .8rem;
+        }
+        .material-icons {
+            margin-right: 1rem;
+        }
+    });
+
+    #media-screen > .mobile-landscape({
+        max-width: 38rem;
+    });
+}

@@ -1,0 +1,95 @@
+.stripe-container {
+    .absolute(0);
+    transform: translateZ(0);
+
+    .stripe-item {
+        position: absolute;
+        .size(80rem, 14rem);
+        outline: 1px solid transparent;
+    }
+
+    .stripe-item.-green, .stripe-item.-teal {
+        top: -7rem;
+    }
+    .stripe-item.-green {
+        left: -40rem;
+    }
+    .stripe-item.-teal {
+        left: -60rem;
+    }
+    .stripe-item.-red, .stripe-item.-rainbow {
+        bottom: -7rem;
+    }
+    .stripe-item.-red {
+        right: -60rem;
+    }
+    .stripe-item.-rainbow {
+        right: -40rem;
+    }
+
+    .stripe-item.-teal, .stripe-item.-red {
+        .size(120rem, 14rem);
+    }
+
+    .stripe-item.-green { background-color: @green; }
+    .stripe-item.-teal { background-color: @teal; }
+    .stripe-item.-red { background-color: @red; }
+    .stripe-item.-rainbow { background: @rainbow-gradient; }
+
+    #media-screen > .sm-desktop-and-greater({
+        .stripe-item.-green {
+            transform: translate(12rem, 12rem) rotate(-60deg);
+            animation: green-stripe-animation-desktop 4.8s @material-standard-curve .8s forwards;
+        }
+        .stripe-item.-teal {
+            transform: translate(-4rem, 80rem) rotate(-60deg);
+            animation: teal-stripe-animation-desktop 5s @material-standard-curve 1.2s forwards;
+        }
+        .stripe-item.-red {
+            transform: translate(4rem, -80rem) rotate(-60deg);
+            animation: red-stripe-animation-desktop 5.4s @material-standard-curve 1.4s forwards;
+        }
+        .stripe-item.-rainbow {
+            transform: translate(-12rem, -12rem) rotate(-60deg);
+            animation: rainbow-stripe-animation-desktop 5.2s @material-standard-curve 1s forwards;
+        }
+    });
+
+    #media-screen > .tablet-only({
+        .stripe-item.-green {
+            transform: translate(4rem, 4rem) rotate(-60deg);
+            animation: green-stripe-animation-tablet 4.8s @material-standard-curve .8s forwards;
+        }
+        .stripe-item.-teal {
+            transform: translate(-12rem, 70rem) rotate(-60deg);
+            animation: teal-stripe-animation-tablet 5s @material-standard-curve 1.2s forwards;
+        }
+        .stripe-item.-red {
+            transform: translate(12rem, -70rem) rotate(-60deg);
+            animation: red-stripe-animation-tablet 5.4s @material-standard-curve 1.4s forwards;
+        }
+        .stripe-item.-rainbow {
+            transform: translate(-4rem, -4rem) rotate(-60deg);
+            animation: rainbow-stripe-animation-tablet 5.2s @material-standard-curve 1s forwards;
+        }
+    });
+
+    #media-screen > .mobile-and-smaller({
+        .stripe-item.-green {
+            transform: scale(.4) translate(4rem, 4rem) rotate(-60deg);
+            animation: green-stripe-animation-mobile 4.8s @material-standard-curve .8s forwards;
+        }
+        .stripe-item.-teal {
+            transform: scale(.4) translate(-16rem, 74rem) rotate(-60deg);
+            animation: teal-stripe-animation-mobile 5s @material-standard-curve 1.2s forwards;
+        }
+        .stripe-item.-red {
+            transform: scale(.4) translate(16rem, -74rem) rotate(-60deg);
+            animation: red-stripe-animation-mobile 5.4s @material-standard-curve 1.4s forwards;
+        }
+        .stripe-item.-rainbow {
+            transform: scale(.4) translate(-4rem, -4rem) rotate(-60deg);
+            animation: rainbow-stripe-animation-mobile 5.2s @material-standard-curve 1s forwards;
+        }
+    });
+}

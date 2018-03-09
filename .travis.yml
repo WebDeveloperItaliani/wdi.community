@@ -1,0 +1,31 @@
+sudo: required
+
+language: node_js
+node_js:
+  - "node"
+
+services:
+  - docker
+
+branches:
+  only:
+  - master
+
+install:
+- npm install -g grunt-cli
+- npm install
+
+script:
+- grunt build:prod
+
+deploy:
+  local-dir: dist/
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  fqdn: wdi.community
+  on:
+    branch: master
+  # See https://github.com/travis-ci/travis-ci/issues/9312
+  edge:
+    branch: v1.8.47
