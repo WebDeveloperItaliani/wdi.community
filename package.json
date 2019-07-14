@@ -6,21 +6,21 @@
   "author": "Web Developer Italiani",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
     "babelify": "^10.0.0",
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-autoprefixer": "~3.0.4",
     "grunt-browserify": "^5.3.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^2.0.0",
-    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-dev-prod-switch": "^0.1.8",
     "grunt-remove-html-comments": "^1.0.0",
-    "load-grunt-tasks": "^4.0.0"
+    "load-grunt-tasks": "^5.0.0"
   },
   "dependencies": {
     "fastclick": "^1.0.6",
