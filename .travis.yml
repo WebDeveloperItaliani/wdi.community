@@ -26,6 +26,3 @@ deploy:
   fqdn: wdi.community
   on:
     branch: master
-  # See https://github.com/travis-ci/travis-ci/issues/9312
-  edge:
-    branch: v1.8.47
